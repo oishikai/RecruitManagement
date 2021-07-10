@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import Nuke
 import FaviconFinder
 
 class RecruitListTableViewCell: UITableViewCell {

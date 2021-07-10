@@ -29,6 +29,9 @@ class RecruitListViewController: UIViewController, UITabBarDelegate {
         }
         companies = comp!
         
+        companyTableView.delegate = self
+        companyTableView.dataSource = self
+        
         let nib = UINib(nibName: RecruitListTableViewCell.cellIdentifier, bundle: nil)
         companyTableView.register(nib, forCellReuseIdentifier: RecruitListTableViewCell.cellIdentifier)
         companyTableView.rowHeight = UITableView.automaticDimension
@@ -44,7 +47,9 @@ class RecruitListViewController: UIViewController, UITabBarDelegate {
         }
         companies = comp!
         
-        
+        for i in 0...(companies.count - 1) {
+            print(companies[i].companyName)
+        }
         companyTableView.reloadData()
     }
     
@@ -64,6 +69,7 @@ class RecruitListViewController: UIViewController, UITabBarDelegate {
 
 extension RecruitListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(companies.count)
         return companies.count
     }
     

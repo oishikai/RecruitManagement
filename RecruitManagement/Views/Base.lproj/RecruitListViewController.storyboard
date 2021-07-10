@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xZh-gd-6Vl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -12,7 +11,7 @@
         <!--Recuruit List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="RecuruitListViewController" id="BYZ-38-t0r" customClass="RecuruitListViewController" customModule="RecuruitManagement" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RecuruitListViewController" id="BYZ-38-t0r" customClass="RecuruitListViewController" customModule="RecruitManagement" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,10 +29,6 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
-                                <connections>
-                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="1Qb-SH-KPR"/>
-                                    <outlet property="delegate" destination="BYZ-38-t0r" id="jp8-uU-mtY"/>
-                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -47,12 +42,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="E9c-sH-YtV"/>
                     <connections>
-                        <outlet property="companyTableView" destination="FT0-tN-uEo" id="3zF-EU-Yxv"/>
+                        <outlet property="companyTableView" destination="FT0-tN-uEo" id="oNU-sy-PnW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="442.02898550724643" y="85.714285714285708"/>
+            <point key="canvasLocation" x="396" y="48"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="W6K-Jk-Ijl">
